@@ -19,8 +19,13 @@ class RegisterController extends Controller
 //        dd($request->email);
 
         $this->validate($request, [
-           'name' => 'required|max:255'
+           'name' => 'required|max:255',
+           'username' => 'required|max:255',
+           'email' => 'required|email|max:255',
+           'password' => 'required|confirmed',
         ]);
+
+        dd('store');
 
         //store user
         //sign user in
