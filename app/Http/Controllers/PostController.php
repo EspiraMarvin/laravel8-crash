@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use http\Env\Response;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
